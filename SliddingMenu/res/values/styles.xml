@@ -1,0 +1,288 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <!-- 公共部分 -->
+    <style name="SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+    
+    <style name="FootLoadMsgTv">
+        <item name="android:textSize">@dimen/foot_load_msg_text_size</item>
+        <item name="android:textColor">@color/white_alpha_de</item>
+    </style>
+    
+    <style name="TopTitleText" parent="@style/SingleLine">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/title_text_size</item>
+    </style>
+    
+    <style name="DropListStyle">
+        <item name="android:windowEnterAnimation">@anim/drop_list_open</item>
+        <item name="android:windowExitAnimation">@anim/drop_list_close</item>
+    </style>
+    
+    <style name="Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    
+    <!-- 启动页 -->
+    <style name="StartingText" parent="@style/SingleLine">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/starting_text_size</item>
+        <item name="android:shadowColor">@color/black_alpha_ee</item>
+        <item name="android:shadowDy">1.2</item>
+        <item name="android:shadowRadius">1.3</item>
+    </style>
+    
+    <style name="MySeatNumLabelTv" parent="@style/SingleLine">
+        <item name="android:textSize">@dimen/my_seat_num</item>
+        <item name="android:textColor">@color/splash_seat_num_label_text_color</item>
+    </style>
+    
+    <style name="MySeatNumTv" parent="@style/SingleLine">
+        <item name="android:textSize">@dimen/my_seat_num</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    
+    <style name="IntoAppText" parent="@style/SingleLine">
+        <item name="android:textSize">@dimen/into_app</item>
+        <item name="android:textColor">@color/splash_into_btn_text_color</item>
+    </style>
+    
+    <!-- 菜单栏 -->
+    <style name="MenuTitleText" parent="@style/SingleLine">
+        <item name="android:paddingLeft">@dimen/menu_title_text_pading_left</item>
+        <item name="android:textColor">@color/splash_into_btn_text_color</item>
+        <item name="android:textSize">@dimen/menu_title_text_size</item>
+    </style>
+
+    <style name="MenuText" parent="@style/SingleLine">
+        <item name="android:textSize">@dimen/menu_text_size</item>
+        <item name="android:textColor">@color/menu_text_color</item>
+        <item name="android:shadowDy">1.3</item>
+        <item name="android:shadowRadius">1.3</item>
+        <item name="android:shadowColor">@color/black</item>
+    </style>
+    
+    <!-- 恒大新闻 -->
+    
+    <style name="NewsPicTagText">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/news_pic_tag_text_size</item>
+        <item name="android:maxLines">2</item>
+    </style>
+    
+    <style name="NewsNoticeLabelText" parent="@style/SingleLine">
+        <item name="android:textColor">@color/news_notice_label_color</item>
+        <item name="android:textSize">@dimen/news_notice_text_size</item>
+    </style>
+    
+    <style name="NewsNoticeText" parent="@style/SingleLine">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/news_notice_text_size</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:ellipsize">marquee</item>
+    </style>
+    
+    <style name="NewsItemTimeText" parent="@style/SingleLine">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/news_item_time_text_size</item>
+    </style>
+    
+    <style name="NewsItemDateText" parent="@style/SingleLine">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/news_item_date_text_size</item>
+    </style>
+    
+    <style name="NewsItemTitleText" parent="@style/SingleLine">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/news_item_title_text_size</item>
+    </style>
+    
+    <style name="NewsItemTagText" >
+        <item name="android:textColor">@color/news_item_tag_text_color</item>
+        <item name="android:textSize">@dimen/news_item_tag_text_size</item>
+        <item name="android:maxLines">2</item>
+    </style>
+    
+    <!-- 公告 -->
+    <style name="NoticeListItemTitleText">
+        <item name="android:textColor">@color/white_alpha_de</item>
+        <item name="android:textSize">@dimen/notice_list_title_text_size</item>
+        <item name="android:minLines">2</item>
+    </style>
+    <style name="NoticeListItemDateText" parent="@style/SingleLine">
+        <item name="android:textColor">@color/news_item_tag_text_color</item>
+        <item name="android:textSize">@dimen/notice_list_date_text_size</item>
+    </style>
+    
+    <!-- 赛事信息 -->
+    <style name="CompetitionItemTitleLayout">
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textSize">@dimen/competition_item_title_text_size</item>
+        <item name="android:textColor">@color/competition_item_title_text_color</item>
+    </style>
+    
+    <style name="CompetitionItemTeamNameText">
+        <item name="android:textSize">@dimen/competition_item_team_name_text_size</item>
+        <item name="android:textColor">@color/competition_item_team_text_color</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <style name="CompetitionItemTimeText" parent="@style/SingleLine">
+        <item name="android:textSize">@dimen/competition_item_time_text_size</item>
+        <item name="android:textColor">@color/white_alpha_de</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">5dip</item>
+    </style>
+    
+    <style name="CompetitionItemScoreText" parent="@style/SingleLine">
+        <item name="android:textSize">@dimen/competition_item_score_text_size</item>
+        <item name="android:textColor">@color/white_alpha_de</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="TableTitleText" parent="@style/SingleLine">
+        <item name="android:padding">@dimen/competition_count_header_text_padding</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/competition_count_header_text_color</item>
+        <item name="android:textSize">@dimen/competition_count_header_text_size</item>
+    </style>
+    
+    <style name="TableText" parent="@style/SingleLine">
+        <item name="android:padding">@dimen/competition_count_header_text_padding</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/competition_count_item_text_color</item>
+        <item name="android:textSize">@dimen/competition_count_item_text_size</item>
+    </style>
+    
+    <!-- 俱乐部 -->
+    <style name="ClubSecondTitleLayout">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/club_second_title_bg</item>
+        <item name="android:textColor">@color/splash_into_btn_text_color</item>
+        <item name="android:textSize">@dimen/club_scond_title_text_size</item>
+    </style>
+    
+    <style name="ClubItemLayout">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:background">@drawable/selector_club_item_bg</item>
+    </style>
+    
+    <!-- 会员专区 -->
+    <style name="VipItemLayout">
+        <item name="android:background">@drawable/selector_vip_item_bg</item>
+        <item name="android:layout_marginLeft">@dimen/vip_item_marging_horizontal</item>
+        <item name="android:layout_marginRight">@dimen/vip_item_marging_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/vip_item_marging_vertical</item>
+        <item name="android:layout_marginBottom">@dimen/vip_item_marging_vertical</item>
+        <item name="android:paddingBottom">@dimen/vip_item_padding_vertical</item>
+        <item name="android:paddingLeft">@dimen/vip_item_padding_horizontal</item>
+        <item name="android:paddingRight">@dimen/vip_item_padding_horizontal</item>
+        <item name="android:paddingTop">@dimen/vip_item_padding_vertical</item>
+    </style>
+    
+    <style name="VipItemText">
+        <item name="android:layout_marginLeft">@dimen/vip_item_text_marging</item>
+        <item name="android:layout_marginRight">@dimen/vip_item_text_marging</item>
+        <item name="android:textColor">@color/news_detail_title_text_color</item>
+        <item name="android:textSize">@dimen/vip_item_text_size</item>
+    </style>
+    
+    <style name="IntegralSearchLabelText1">
+        <item name="android:textSize">@dimen/integral_search_label_text_size</item>
+        <item name="android:textColor">@color/integral_search_label_text1_color</item>
+    </style>
+    
+    <style name="IntegralSearchLabelText2">
+        <item name="android:textSize">@dimen/integral_search_label_text_size</item>
+        <item name="android:textColor">@color/integral_search_label_text2_color</item>
+    </style>
+    
+    <style name="IntegralSearchInputEt" parent="@style/SingleLine">
+        <item name="android:background">@drawable/input_bg</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:textColor">@color/white_alpha_de</item>
+        <item name="android:textSize">@dimen/integral_search_input_text_size</item>
+    </style>
+
+    <style name="DropListItemText" parent="@style/SingleLine">
+        <item name="android:background">@drawable/selector_drop_list_item_bg</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:textColor">@color/white_alpha_de</item>
+        <item name="android:textSize">@dimen/drop_item_text_size</item>
+        <item name="android:padding">@dimen/drop_item_padding</item>
+        
+    </style>
+
+    <style name="TeamDropListItemText" parent="@style/SingleLine">
+        <item name="android:background">@drawable/selector_title_drop_list_item_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/title_text_size</item>
+        <item name="android:padding">@dimen/drop_item_padding</item>
+    </style>
+    
+    <style name="IntegeralSearchResultSetText" parent="@style/SingleLine">
+        <item name="android:textColor">@color/integral_search_result_seat_text_color</item>
+        <item name="android:textSize">@dimen/integral_search_result_seat_text_size</item>
+    </style>
+    
+    <style name="IntegralSearchResultCardText" parent="@style/SingleLine">
+        <item name="android:textColor">@color/black_alpha_ee</item>
+        <item name="android:textSize">@dimen/integral_search_result_card_text_size</item>
+    </style>
+    
+    <!-- 商务 -->
+    
+    
+    <!-- 推送通知 -->
+    <style name="NotifiTitleText" parent="@style/SingleLine">
+        <item name="android:textSize">@dimen/notifi_title_text_size</item>
+        <item name="android:textColor">@color/black_alpha_ee</item>
+    </style>
+
+    <style name="NotifiTagText" parent="@style/SingleLine">
+        <item name="android:textSize">@dimen/notifi_tag_text_size</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+    
+    <!-- 软件下载 -->
+    <style name="AppListTitleText" parent="@style/SingleLine">
+        <item name="android:textSize">@dimen/app_donwload_title_text_size</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="AppListTagText">
+        <item name="android:textSize">@dimen/app_donwload_tag_text_size</item>
+        <item name="android:textColor">@color/news_item_tag_text_color</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+</resources>

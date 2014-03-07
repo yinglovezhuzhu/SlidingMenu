@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/table_title_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/competition_count_title_marging_bottom" >
+
+        <TextView
+            style="@style/TableTitleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="13"
+            android:text="@string/rank" />
+
+        <TextView
+            style="@style/TableTitleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="12"
+            android:text="@string/player" />
+
+        <TextView
+            style="@style/TableTitleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:text="@string/team" />
+
+        <TextView
+            style="@style/TableTitleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="13"
+            android:text="@string/shoot_count" />
+    </LinearLayout>
+    <ListView 
+        android:id="@+id/lv_competition_shooter_count"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:listSelector="@color/transparent"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/transparent"
+        android:dividerHeight="@dimen/competition_count_divider_height"
+        android:fadingEdge="none" />
+
+</LinearLayout>

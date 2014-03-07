@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">恒大</string>
+    <string name="colon">：</string>
+    <string name="back">返回</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="exit">退出</string>
+    <string name="exit_confirm_msg">退出广州恒大足球吗？</string>
+    <string name="click_to_load_more">点击加载更多</string>
+    <string name="loading">正在加载&#8230;</string>
+    <string name="pic_loading">图片加载中&#8230;</string>
+    <string name="searching">正在查询&#8230;</string>
+    <string name="net_error">网络错误</string>
+    <string name="net_error_reload">网络错误，点击重新加载！</string>
+    <string name="no_data_to_refresh">无数据，刷新试试！</string>
+    <string name="lick_to_view_detail">点击查看详情</string>
+    <string name="push_notice_title">通知</string>
+    <string name="no_data">无数据！</string>
+	
+    <!-- 启动页 -->
+    <string name="starting">正在启动……</string>
+    <string name="my_seat_num">我的座位号：</string>
+    <string name="into_app">进入应用</string>
+    <string name="getting_seat">正在获取……</string>
+    <string name="getting_seat_error">点击重新获取</string>
+    <string name="hint_input">手机号码(会员卡号)</string>
+    <string name="error_phone">请输入正确的手机号码！</string>
+    <string name="search_seat">点击查询座位号</string>
+    <string name="search_seat_error">点击重新查询</string>
+    <string name="not_vip_toast">会员卡号错误，请重新查询！</string>
+    
+    <!-- 菜单栏 -->
+    <string name="title_gz_hengda">广州恒大</string>
+    
+    <!-- 恒大新闻 -->
+    <string name="news_notice_label">最新公告</string>
+    <string name="news_ad_enter_ad">马上进入>></string>
+    <string name="news_title">恒大新闻</string>
+    <string name="publish_time">发布日期：</string>
+    <string name="article_srouce">信息来源：</string>
+    <string name="getting_notice">正在加载公告……</string>
+    <string name="notice_list">公告列表</string>
+    <string name="notice_detail">公告</string>
+    <string name="push_notice_detail_title">资讯速递</string>
+    
+    <!-- 赛事信息 -->
+    <string name="competition_title">赛事信息</string>
+    
+    <string name="score_count">中超积分榜</string>
+    <string name="rank">排名</string>
+    <string name="team">球队</string>
+    <string name="round">轮次</string>
+    <string name="score">积分</string>
+    <string name="shooter_count">中超射手榜</string>
+    <string name="player">球员</string>
+    <string name="shoot_count">进球数</string>
+    
+    <!-- 俱乐部 -->
+    <string name="club_title">俱乐部</string>
+    <string name="introduct">简介</string>
+    <string name="history">历史</string>
+    <string name="home">主场</string>
+    <string name="clothes">比赛服</string>
+    <string name="mascot">吉祥物</string>
+    <string name="record">战绩</string>
+    <string name="notebook">大事记</string>
+    <string name="cup">奖杯</string>
+    <string name="transfer">转会</string>
+    
+    <!-- 球队 -->
+    <string name="team_title_default">教练组</string>
+    
+    <!-- 会员专区 -->
+    <string name="vip_title">会员专区</string>
+    <string name="vip_num">会员号</string>
+    <string name="idcard_num">身份证号</string>
+    <string name="total_integral">总积分</string>
+    <string name="name">姓名</string>
+    <string name="year">年度</string>
+    <string name="tip_must_input">（必填）</string>
+    <string name="search">查询</string>
+    <string name="search_result">查询结果</string>
+    <string name="score_date">积分时间</string>
+    <string name="score_type">积分类型</string>
+    
+    <string name="vip_card">会员卡介绍</string>
+    <string name="integral_search">积分查询</string>
+    <string name="year_ticket">观赛年票</string>
+    <string name="vip_integral">会员积分</string>
+    <string name="city_card">羊城通</string>
+    <string name="phone_card">手机卡</string>
+    <string name="notice">公告</string>
+    <string name="help">常见问题</string>
+    <string name="dimesional_code">二维码分享</string>
+    
+    <!-- 积分查询 -->
+    <string name="vip_num_null">会员号不能为空！</string>
+    <string name="idcard_num_null">身份证号不能为空！</string>
+    <string name="name_null">姓名不能为空！</string>
+    <string name="year_null">年度不能为空！</string>
+    <string name="year_error">年度错误！</string>
+    <string name="seat_num">座位号</string>
+    <string name="area">区</string>
+    <string name="row">排</string>
+    <string name="num">号</string>
+    <string name="seaching">正在查询，请稍候……</string>
+    <string name="exit_result_confirm_msg">您将离开查询结果页面？</string>
+    <string name="not_vip">手机号未注册会员</string>
+    
+    <string name="app_download">软件下载</string>
+    
+    <!-- 手机订票 -->
+    <string name="book_ticket">手机订票</string>
+    <string name="grab_ticket">网上抢票</string>
+    
+    <!-- 商务 -->
+    <string name="business_title">商务</string>
+    <string name="business_partner">合作伙伴</string>
+    
+    <!-- 网上商城 -->
+    <string name="market_title">网上商城</string>
+    
+    <!-- 球迷论坛 -->
+    <string name="blog_title">球迷论坛</string>
+    
+    <string name="download">下载</string>
+    
+    <string name="ad_detail">广告信息</string>
+</resources>

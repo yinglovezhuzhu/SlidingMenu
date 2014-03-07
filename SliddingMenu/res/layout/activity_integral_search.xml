@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg2"
+    android:orientation="vertical" >
+
+    <com.yuninfo.footballapp.widget.TitleBar2
+        android:id="@+id/tb_integral_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+	<ScrollView
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:scrollbars="none"
+	    android:fadingEdge="none"
+	    android:padding="@dimen/integral_body_marging" >
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/grass_bg2"
+	        android:gravity="center_horizontal"
+	        android:orientation="vertical"
+	        android:padding="@dimen/integral_body_padding" >
+	
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="@dimen/integral_top_marging"
+	            android:orientation="horizontal" >
+	
+	            <TextView
+	                style="@style/IntegralSearchLabelText1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/vip_num" />
+	
+	            <TextView
+	                style="@style/IntegralSearchLabelText2"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/tip_must_input" />
+	        </LinearLayout>
+	        <EditText
+	            style="@style/IntegralSearchInputEt"
+	            android:id="@+id/et_integral_search_vip_num"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="@dimen/integral_lable_input_marging"
+	            android:inputType="number" />
+<!-- 	            android:text="18122762125" -->
+	
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="@dimen/integral_body_padding"
+	            android:orientation="horizontal" >
+	
+	            <TextView
+	                style="@style/IntegralSearchLabelText1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/idcard_num" />
+	
+	            <TextView
+	                style="@style/IntegralSearchLabelText2"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/tip_must_input" />
+	        </LinearLayout>
+	
+	        <EditText
+	            style="@style/IntegralSearchInputEt"
+	            android:id="@+id/et_integral_search_idcard_num"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="@dimen/integral_lable_input_marging"
+	            android:inputType="textUri"
+	            android:digits="01234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+	            tools:ignore="TextFields" />
+<!-- 	            android:text="420106197710153639" -->
+	
+<!-- 	        <LinearLayout -->
+<!-- 	            android:layout_width="match_parent" -->
+<!-- 	            android:layout_height="wrap_content" -->
+<!-- 	            android:layout_marginTop="@dimen/integral_body_padding" -->
+<!-- 	            android:orientation="horizontal" > -->
+	
+<!-- 	            <TextView -->
+<!-- 	                style="@style/IntegralSearchLabelText1" -->
+<!-- 	                android:layout_width="wrap_content" -->
+<!-- 	                android:layout_height="wrap_content" -->
+<!-- 	                android:text="@string/name" /> -->
+	
+<!-- 	            <TextView -->
+<!-- 	                style="@style/IntegralSearchLabelText2" -->
+<!-- 	                android:layout_width="wrap_content" -->
+<!-- 	                android:layout_height="wrap_content" -->
+<!-- 	                android:text="@string/tip_must_input" /> -->
+<!-- 	        </LinearLayout> -->
+	
+<!-- 	        <EditText -->
+<!-- 	            style="@style/IntegralSearchInputEt" -->
+<!-- 	            android:id="@+id/et_integral_search_name" -->
+<!-- 	            android:layout_width="match_parent" -->
+<!-- 	            android:layout_height="wrap_content" -->
+<!-- 	            android:layout_marginTop="@dimen/integral_lable_input_marging" -->
+<!-- 	            android:inputType="textPersonName" -->
+<!-- 	            tools:ignore="TextFields" /> -->
+<!-- 	            android:text="杨翔" -->
+	        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="@dimen/integral_body_padding"
+	            android:orientation="horizontal" >
+	
+	            <TextView
+	                style="@style/IntegralSearchLabelText1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/year" />
+	
+	            <TextView
+	                style="@style/IntegralSearchLabelText2"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/tip_must_input" />
+	        </LinearLayout>
+	        <Button
+	            style="@style/IntegralSearchInputEt"
+	            android:id="@+id/btn_integral_search_year"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="@dimen/integral_lable_input_marging"
+	            android:maxLength="4" />
+	        
+	        <Button 
+	            android:id="@+id/btn_integral_search"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:minWidth="@dimen/integral_search_btn_min_width"
+	            android:layout_marginTop="@dimen/integral_search_btn_marging_top"
+	            android:background="@drawable/selector_integral_search_btn"
+	            android:gravity="center"
+	            android:text="@string/search"
+	            android:textColor="@color/integral_search_button_text_color"
+	            android:textSize="@dimen/integral_search_btn_text_size"/>
+	    </LinearLayout>
+	</ScrollView>
+</LinearLayout>

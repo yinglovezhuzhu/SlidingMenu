@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MenuText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:drawableLeft="@drawable/ic_apps"
+    android:paddingLeft="@dimen/menu_item_pading_horizontal"
+    android:background="@drawable/selector_menu_item_bg"
+    android:gravity="left|center_vertical"
+    android:drawablePadding="@dimen/menu_title_icon_marging_left"
+    android:clickable="false"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:button="@null" />

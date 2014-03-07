@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical" >
+    
+	<com.yuninfo.footballapp.widget.TitleBar
+	    android:id="@+id/tb_main_title_bar"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" />
+	<FrameLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+	    <FrameLayout
+	        android:id="@+id/fl_main_body"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical" >
+	        
+	    </FrameLayout>
+		<View 
+		    android:layout_width="match_parent"
+		    android:layout_height="@dimen/title_bar_shadow_size"
+		    android:background="@drawable/shape_shadow_top_title"/>
+	</FrameLayout>
+
+</LinearLayout>

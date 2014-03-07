@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/black" >
+    <RelativeLayout
+        android:id="@+id/rl_top_title_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_title_bg"
+        tools:ignore="UselessParent" >
+        <ImageButton
+            android:id="@+id/ibtn_top_title_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_red_btn"
+            tools:ignore="ContentDescription" />
+        <FrameLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/ibtn_top_title_right"
+            android:layout_toRightOf="@+id/ibtn_top_title_left" >
+	        <TextView
+	            style="@style/TopTitleText"
+	            android:id="@+id/tv_top_title_center"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:layout_margin="@dimen/title_padding" />
+	        <RadioGroup 
+	            android:id="@+id/rg_top_title_tabs"
+	            android:orientation="horizontal"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="@dimen/title_padding"
+	            android:layout_gravity="center">
+	            <RadioButton
+	                android:id="@+id/rb_top_title_tab1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:button="@null"
+	                android:textSize="@dimen/title_tab_text_size"
+	                android:gravity="center"
+	                android:background="@drawable/selector_top_title_tab_left" />
+	            <RadioButton
+	                android:id="@+id/rb_top_title_tab2"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textSize="@dimen/title_tab_text_size"
+	                android:gravity="center"
+	                android:button="@null"
+	                android:background="@drawable/selector_top_title_tab_right" />
+	        </RadioGroup>
+        </FrameLayout>
+        <ImageButton
+            android:id="@+id/ibtn_top_title_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_red_btn"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+</LinearLayout>

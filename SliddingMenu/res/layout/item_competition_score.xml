@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@drawable/table_bg1" >
+    <TextView 
+        style="@style/TableText"
+        android:id="@+id/tv_competition_score_text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="13" />
+    <TextView 
+        style="@style/TableText"
+        android:id="@+id/tv_competition_score_text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10" />
+    <TextView 
+        style="@style/TableText"
+        android:id="@+id/tv_competition_score_text3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="12" />
+    <TextView 
+        style="@style/TableText"
+        android:id="@+id/tv_competition_score_text4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="12" />
+
+</LinearLayout>

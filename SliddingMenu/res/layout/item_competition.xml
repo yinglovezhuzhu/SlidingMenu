@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/competition_item_padding_horizontal"
+    android:paddingRight="@dimen/competition_item_padding_horizontal"
+    android:paddingTop="@dimen/competition_item_padding_vertical"
+    android:paddingBottom="@dimen/competition_item_padding_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|left"
+        android:background="@drawable/competition_title_bg">
+	    <TextView
+	        android:id="@+id/tv_item_competition_title"
+	        style="@style/CompetitionItemTitleLayout"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/competition_title" />
+	    <TextView
+            android:id="@+id/tv_item_competition_time"
+            style="@style/CompetitionItemTimeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/competition_body_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/competition_item_body_padding"
+        tools:ignore="DisableBaselineAlignment" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_item_competition_team_icon1"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                tools:ignore="NestedWeights,ContentDescription" />
+
+            <TextView
+                android:id="@+id/tv_item_competition_team_name1"
+                style="@style/CompetitionItemTeamNameText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables" >
+
+            <ImageView
+                android:id="@+id/iv_item_competition_vs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/vs"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tv_item_competition_score"
+                style="@style/CompetitionItemScoreText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textScaleX="1.2"
+                android:textAlignment="inherit"
+                android:typeface="sans"
+                android:paddingBottom="@dimen/competition_item_score_padding" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:orientation="vertical"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/iv_item_competition_team_icon2"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                tools:ignore="NestedWeights,ContentDescription" />
+
+            <TextView
+                android:id="@+id/tv_item_competition_team_name2"
+                style="@style/CompetitionItemTeamNameText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

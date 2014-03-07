@@ -1,0 +1,147 @@
+<resources>
+    
+	<!-- SlidingMenu配置 -->
+    <dimen name="slidingmenu_offset">60dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">12dp</dimen>
+    <dimen name="line_size">1dip</dimen>
+    
+    <!-- 文字配置 -->
+    <dimen name="foot_load_msg_text_size">16sp</dimen>
+    <dimen name="drop_item_text_size">16sp</dimen>
+    <!-- 启动页文字 -->
+    <dimen name="my_seat_num">15sp</dimen>
+    <dimen name="into_app">24sp</dimen>
+    <dimen name="version_text_size">15sp</dimen>
+    <dimen name="starting_text_size">18sp</dimen>
+    <!-- 菜单栏文字 -->
+    <dimen name="menu_title_text_size">21sp</dimen>
+    <dimen name="menu_text_size">20sp</dimen>
+    
+    <!-- 标题栏文字 -->
+    <dimen name="title_text_size">20sp</dimen>
+    <dimen name="title_button_text_size">15sp</dimen>
+    <dimen name="title_tab_text_size">13sp</dimen>
+    <!-- 恒大新闻文字 -->
+    <dimen name="news_pic_tag_text_size">20sp</dimen>
+    <dimen name="news_notice_text_size">13sp</dimen>
+    <dimen name="news_ad_text_size">15sp</dimen>
+    <dimen name="news_ad_enter_ad_text_size">14sp</dimen>
+    <dimen name="news_item_time_text_size">25sp</dimen>
+    <dimen name="news_item_date_text_size">14sp</dimen>
+    <dimen name="news_item_title_text_size">18sp</dimen>
+    <dimen name="news_item_tag_text_size">15sp</dimen>
+    <dimen name="news_detail_title_date_text_size">10sp</dimen>
+    <dimen name="news_detail_text_size">15sp</dimen>
+    <!-- 公告 -->
+    <dimen name="notice_list_title_text_size">18sp</dimen>
+    <dimen name="notice_list_date_text_size">14sp</dimen>
+    <!-- 赛事信息文字 -->
+    <dimen name="competition_item_title_text_size">16sp</dimen>
+    <dimen name="competition_item_team_name_text_size">14sp</dimen>
+    <dimen name="competition_item_time_text_size">16sp</dimen>
+    <dimen name="competition_item_score_text_size">45sp</dimen>
+    <!-- 赛事信息==赛事统计 -->
+    <dimen name="competition_count_header_text_size">15sp</dimen>
+    <dimen name="competition_count_item_text_size">14sp</dimen>
+    <!-- 俱乐部文字 -->
+    <dimen name="club_scond_title_text_size">16sp</dimen>
+    <!-- 会员专区文字 -->
+    <dimen name="vip_item_text_size">16sp</dimen>
+    <dimen name="integral_search_label_text_size">16sp</dimen>
+    <dimen name="integral_search_input_text_size">15sp</dimen>
+    <dimen name="integral_search_btn_text_size">22sp</dimen>
+    <dimen name="integral_search_result_seat_text_size">17sp</dimen>
+    <dimen name="integral_search_result_card_text_size">15sp</dimen>
+    <!-- 推送通知 -->
+    <dimen name="notifi_title_text_size">17sp</dimen>
+    <dimen name="notifi_tag_text_size">14sp</dimen>
+    <!-- 软件下载 -->
+    <dimen name="app_download_btn_text_size">16sp</dimen>
+    <dimen name="app_donwload_title_text_size">18sp</dimen>
+    <dimen name="app_donwload_tag_text_size">13sp</dimen>
+    
+    <!-- 布局配置 -->
+    <dimen name="title_bar_shadow_size">3dip</dimen>
+    <dimen name="foot_load_text_progress_marging">10dip</dimen>
+    <dimen name="foot_load_progress_size">25dip</dimen>
+    <dimen name="foot_load_padding">15dip</dimen>
+    <dimen name="title_bar_loading_progress_size">35dip</dimen>
+    <dimen name="drop_item_padding">5dip</dimen>
+    <!-- 启动页 -->
+    <dimen name="splash_logo_margin">15dip</dimen>
+    <dimen name="splash_seat_num_margin_top">30dip</dimen>
+    <dimen name="splash_seat_num_margin_bottom">18dip</dimen>
+    <dimen name="splash_version_padding_bottom">12dip</dimen>
+    <!-- 菜单栏 -->
+    <dimen name="menu_title_icon_marging_left">12dip</dimen>
+    <dimen name="menu_title_text_pading_left">14dip</dimen>
+    <dimen name="menu_item_pading_horizontal">12dip</dimen>
+    <dimen name="menu_item_pading_vertical">8dip</dimen>
+    <dimen name="menu_item_text_icon_padding">10dip</dimen>
+    
+    <!-- 标题栏 -->
+    <dimen name="title_padding">8dip</dimen>
+    <!-- 恒大新闻 -->
+    <dimen name="news_pic_height">230dip</dimen>
+    <dimen name="news_pic_tag_padding_horizontal">8dip</dimen>
+    <dimen name="news_pic_tag_padding_top">8dip</dimen>
+    <dimen name="news_pic_tag_padding_bottom">3dip</dimen>
+    <dimen name="news_notice_padding">8dip</dimen>
+    <dimen name="news_ad_padding_horizontal">8dip</dimen>
+    <dimen name="news_ad_padding_vertical">4dip</dimen>
+    <dimen name="news_ad_pic_max_size">80dip</dimen>
+    <dimen name="news_ad_pic_min_size">70dip</dimen>
+    <dimen name="news_ad_text_padding_left">12dip</dimen>
+    <dimen name="news_ad_text_padding_vertical">5dip</dimen>
+    <dimen name="news_ad_enter_ad_text_padding">5dip</dimen>
+    <dimen name="news_notice_shadow_size">5dip</dimen>
+    <dimen name="news_item_padding">8dip</dimen>
+    <dimen name="news_item_text_icon_marging">5dip</dimen>
+    <dimen name="news_detail_title_padding">5dip</dimen>
+    <!-- 公告 -->
+    <dimen name="notice_date_title_marging">3dip</dimen>
+    <!-- 赛事信息 -->
+    <dimen name="competition_item_body_padding">5dip</dimen>
+    <dimen name="competition_item_padding_horizontal">15dip</dimen>
+    <dimen name="competition_item_padding_vertical">7dip</dimen>
+    <dimen name="competition_item_score_padding">2dip</dimen>
+    <!-- 赛事信息==赛事统计 -->
+    <dimen name="competition_count_body_marging">3dip</dimen>
+    <dimen name="competition_count_header_text_padding">2dip</dimen>
+    <dimen name="competition_count_title_marging_bottom">5dip</dimen>
+    <dimen name="competition_count_divider_height">3dip</dimen>
+    <!-- 俱乐部 -->
+    <dimen name="club_log_padding">5dip</dimen>
+    <!-- 会员专区 -->
+    <dimen name="vip_item_padding_horizontal">18dip</dimen>
+    <dimen name="vip_item_padding_vertical">5dip</dimen>
+    <dimen name="vip_item_text_marging">20dip</dimen>
+    <dimen name="vip_item_marging_horizontal">8dip</dimen>
+    <dimen name="vip_item_marging_vertical">4dip</dimen>
+    <dimen name="integral_top_marging">5dip</dimen>
+    <dimen name="integral_body_marging">10dip</dimen>
+    <dimen name="integral_body_padding">15dip</dimen>
+    <dimen name="integral_lable_input_marging">3dip</dimen>
+    <dimen name="integral_search_btn_marging_top">45dip</dimen>
+    <dimen name="integral_search_btn_min_width">170dip</dimen>
+    <dimen name="integral_search_result_body_marging">5dip</dimen>
+    <dimen name="integral_search_result_card_marging_horizontal">5dip</dimen>
+    <dimen name="integral_search_result_card_marging_vertical">8dip</dimen>
+    <dimen name="integral_search_result_card_text_marging">2dip</dimen>
+    <!-- 商务 -->
+    <dimen name="business_item_image_marging1">10dip</dimen>
+    <dimen name="business_item_image_marging2">3dip</dimen>
+    <dimen name="business_item_image_marging3">8dip</dimen>
+    <dimen name="business_item_image_marging4">3dip</dimen>
+    <!-- 推送通知 -->
+    <dimen name="notifi_title_tag_dist">3dip</dimen>
+    <dimen name="notifi_content_padding">8dip</dimen>
+    
+    <!-- 软件下载 -->
+    <dimen name="app_item_img_size">50dip</dimen>
+    <dimen name="app_item_padding">5dip</dimen>
+    <dimen name="app_item_text_padding_left">8dip</dimen>
+    <dimen name="app_item_text_padding_right">10dip</dimen>
+    
+</resources>

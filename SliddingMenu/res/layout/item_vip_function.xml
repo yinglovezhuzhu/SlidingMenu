@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/VipItemLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent" >
+
+        <ImageView
+            android:id="@+id/iv_item_vip_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            tools:ignore="ContentDescription,MissingPrefix" />
+
+        <TextView
+            android:id="@+id/tv_item_vip_center"
+            style="@style/VipItemText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/iv_item_vip_right"
+            android:layout_toRightOf="@+id/iv_item_vip_left" />
+
+        <ImageView
+            android:id="@+id/iv_item_vip_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/selector_vip_arrow"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+</LinearLayout>

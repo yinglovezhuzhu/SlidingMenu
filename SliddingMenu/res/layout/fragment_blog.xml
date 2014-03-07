@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg2" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/rl_blog_tool_bar" >
+
+        <WebView
+            android:id="@+id/wv_blog_web"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:scrollbars="vertical" />
+		<com.yuninfo.footballapp.widget.ErrorPageView
+		    android:id="@+id/epv_blog_error_page"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent" />
+        <ProgressBar
+            android:id="@+id/pb_blog_progress"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="3dip"
+            android:layout_gravity="top"
+            android:max="100" />
+    </FrameLayout>
+    
+	<RelativeLayout 
+        android:id="@+id/rl_blog_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/web_tool_bar_bg">
+        <ImageButton
+            android:id="@+id/ibtn_blog_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:minHeight="35dip"
+            android:minWidth="50dip"
+            android:background="@color/transparent"
+            android:src="@drawable/web_back_disable"
+            android:clickable="false"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/ibtn_blog_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@+id/ibtn_blog_back"
+            android:minHeight="35dip"
+            android:minWidth="50dip"
+            android:background="@color/transparent"
+            android:src="@drawable/web_previous_disable"
+            android:clickable="false"
+            tools:ignore="ContentDescription" />
+
+        <View 
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:layout_toLeftOf="@+id/ibtn_blog_refresh"
+            android:layout_toRightOf="@+id/ibtn_blog_previous"/>
+        <ImageButton
+            android:id="@+id/ibtn_blog_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:minHeight="35dip"
+            android:minWidth="50dip"
+            android:background="@color/transparent"
+            android:src="@drawable/web_refresh_disable"
+            android:clickable="false"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+</RelativeLayout>

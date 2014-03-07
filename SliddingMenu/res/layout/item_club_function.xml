@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+	        android:id="@+id/iv_item_club_icon"
+		    android:layout_width="wrap_content"
+		    android:layout_height="match_parent"
+		    android:layout_alignParentLeft="true"
+		    android:layout_toLeftOf="@+id/iv_item_club_divider_left"
+		    android:padding="10dip"
+		    android:scaleType="fitCenter"
+		    tools:ignore="ContentDescription"
+    		android:background="@drawable/selector_club_item_bg" />
+
+        <ImageView
+            android:id="@+id/iv_item_club_divider_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/divider_vertical"
+            tools:ignore="ContentDescription" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_item_club_divider_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/divider_horizontal"
+        tools:ignore="ContentDescription" />
+
+</LinearLayout>

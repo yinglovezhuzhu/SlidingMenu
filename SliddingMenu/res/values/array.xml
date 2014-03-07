@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="team_array">
+        <item>教练组</item>
+        <item>门将</item>
+        <item>后卫</item>
+        <item>中场</item>
+        <item>前锋</item>
+        <item>外租球员</item>
+    </string-array>
+
+</resources>
