@@ -394,16 +394,16 @@ public class MainActivity extends BaseSlidingActivity implements OnClickListener
 	
 	@Override
 	public void onClick(View v) {
-		switch (v.getId()) {
-			case R.id.ibtn_top_title_left :
-				showMenu();
-				break;
-			case R.id.ibtn_top_title_right :
-				rightButtonAction(v);
-				break;
-			default :
-				break;
-		}
+//		switch (v.getId()) {
+//			case R.id.ibtn_top_title_left :
+//				showMenu();
+//				break;
+//			case R.id.ibtn_top_title_right :
+//				rightButtonAction(v);
+//				break;
+//			default :
+//				break;
+//		}
 	}
 	
 	@Override
