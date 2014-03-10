@@ -4,7 +4,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/slidingmenu_bg" >
-    
     <include layout="@layout/layout_menu_title"/>
     <FrameLayout 
         android:layout_width="match_parent"

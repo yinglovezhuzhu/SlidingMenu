@@ -15,36 +15,7 @@
     <!-- 透明色 -->
     <color name="transparent">#00FFFFFF</color>
     
-    <!-- 启动页 -->
-    <color name="splash_seat_num_label_text_color">#FFE89A30</color>
-    <color name="splash_into_btn_text_color">#FFFCDB48</color>
-    <color name="splash_version_text_color">#AAFCDB48</color>
-    <color name="hint_color">#FF777777</color>
     
     <color name="menu_text_color">#FFA3A3A3</color>
     
-    <!-- 恒大新闻 -->
-    <color name="news_header_bg_color">#FFE6E6E6 </color>
-    <color name="news_header_bg_border_color">#FFC8C8C8</color>
-    <color name="news_notice_label_color">#FFFFE34B</color>
-    <color name="news_ad_text_color">#FFDA5C00</color>
-    <color name="news_ad_enter_ad_color">#FFF48801</color>
-    <color name="news_item_tag_text_color">#FF6A6A6A</color>
-    <color name="news_detail_title_text_color">#FFFFE153</color>
-    <color name="news_detail_title_date_color">#BBFFFFFF</color>
-    <color name="news_detail_text_color">#DDFFFFFF</color>
-    <!-- 赛事信息 -->
-    <color name="competition_item_title_text_color">#FFFFDB32</color>
-    <color name="competition_item_team_text_color">#FFFCE129</color>
-    <color name="competition_count_tab_selected_text_color">#FFD51900</color>
-    <color name="competition_count_header_text_color">#FFFCE129</color>
-    <color name="competition_count_item_text_color">#BBFFFFFF</color>
-    
-    <!-- 会员专区 -->
-    <color name="integral_search_label_text1_color">#FFFCE129</color>
-    <color name="integral_search_label_text2_color">#FFD8BD43</color>
-    <color name="integral_search_button_text_color">#FFFCDB48</color>
-    <color name="integral_search_result_seat_text_color">#FF3D1100</color>
-    
-    <color name="top_logo_pic_bg">#FFF7F7F7</color>
 </resources>

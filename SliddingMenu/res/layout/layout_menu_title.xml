@@ -26,7 +26,7 @@
             style="@style/MenuTitleText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/title_gz_hengda" />
+            android:text="@string/app_name" />
     </LinearLayout>
 
 </LinearLayout>

@@ -13,9 +13,7 @@ package com.opensource.slidingmenu.adapter;
 
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import android.content.Context;
 import android.view.View;
@@ -35,8 +33,6 @@ public class MenuAdapter extends BaseAdapter {
 	private Context mContext = null;
 	
 	private List<String> mMenuDatas = new ArrayList<String>();
-	
-	private Map<String, Integer> mMenuIcons = new HashMap<String, Integer>();
 	
 	public MenuAdapter(Context context) {
 		this.mContext = context;
@@ -85,10 +81,8 @@ public class MenuAdapter extends BaseAdapter {
 		} else {
 			itemView = (RadioButton) convertView.getTag();
 		}
-//		ConfigResp.ConfigData data = getItem(position);
-//		Integer iconRes = mMenuIcons.get(data.getCode());
-//		itemView.setCompoundDrawablesWithIntrinsicBounds(iconRes == null ? R.drawable.ic_menu_default : iconRes, 0, 0, 0);
-//		itemView.setText(data.getName());
+		itemView.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_menu_default, 0, 0, 0);
+		itemView.setText(mMenuDatas.get(position));
 		return convertView;
 	}
 	

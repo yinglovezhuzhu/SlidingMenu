@@ -3,7 +3,7 @@
     style="@style/MenuText"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:drawableLeft="@drawable/ic_apps"
+    android:drawableLeft="@drawable/ic_launcher"
     android:paddingLeft="@dimen/menu_item_pading_horizontal"
     android:background="@drawable/selector_menu_item_bg"
     android:gravity="left|center_vertical"
