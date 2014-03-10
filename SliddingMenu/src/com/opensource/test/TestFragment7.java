@@ -26,7 +26,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import com.opensource.R;
 import com.opensource.slidingmenu.utils.LogUtils;
@@ -42,10 +41,6 @@ public class TestFragment7 extends Fragment {
 	
 	private static final String ARGS_TITLE = "title";
 	
-	private String mTitle;
-	
-	private TextView mTvContent;
-
 	public static TestFragment7 newInstance(String title) {
 		final TestFragment7 f = new TestFragment7();
 		Bundle args = new Bundle();
@@ -61,10 +56,6 @@ public class TestFragment7 extends Fragment {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		LogUtils.d(TAG, "onCreate()+++++>>");
-		Bundle args = getArguments();
-		if(args != null) {
-			mTitle = args.getString(ARGS_TITLE);
-		}
 	}
 	
 	@Override
@@ -72,7 +63,6 @@ public class TestFragment7 extends Fragment {
 			Bundle savedInstanceState) {
 		LogUtils.d(TAG, "onCreateView()+++++>>");
 		View contentView = inflater.inflate(R.layout.fragment_test, null);
-		mTvContent = (TextView) container.findViewById(R.id.tv_content);
 		return contentView;
 	}
 	
@@ -80,7 +70,6 @@ public class TestFragment7 extends Fragment {
 	public void onViewCreated(View view, Bundle savedInstanceState) {
 		super.onViewCreated(view, savedInstanceState);
 		LogUtils.d(TAG, "onViewCreated()+++++>>");
-		mTvContent.setText(mTitle);
 	}
 	
 	@Override
