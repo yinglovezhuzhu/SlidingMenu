@@ -32,7 +32,7 @@
             android:background="@drawable/selector_red_btn"
             android:src="@drawable/ic_top_title_menu"
             android:contentDescription="@string/app_name"
-            android:visibility="invisible"/>
+            android:visibility="visible"/>
     </LinearLayout>
 	<FrameLayout 
 	    android:layout_width="match_parent"

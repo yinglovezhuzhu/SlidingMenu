@@ -18,6 +18,7 @@ import android.os.Handler;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.util.AttributeSet;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Display;
 import android.view.LayoutInflater;
@@ -620,6 +621,7 @@ public class SlidingMenu extends RelativeLayout {
 	 *
 	 * @param i The width the Sliding Menu will open to, in pixels
 	 */
+	@SuppressLint("NewApi")
 	@SuppressWarnings("deprecation")
 	public void setBehindWidth(int i) {
 		int width;
@@ -633,9 +635,19 @@ public class SlidingMenu extends RelativeLayout {
 			method.invoke(display, parameter);
 			width = parameter.x;
 		} catch (Exception e) {
-			width = display.getWidth();
+			if(Build.VERSION_CODES.HONEYCOMB_MR2 >= Build.VERSION.SDK_INT ) {
+				width = display.getWidth();
+			} else {
+				try {
+					Point size = new Point();
+					display.getSize(size);
+					width = size.x;
+				} catch(NoSuchMethodError error) {
+					width = display.getWidth();
+				}
+			}
 		}
-		setBehindOffset(width-i);
+		setBehindOffset(width - i);
 	}
 
 	/**

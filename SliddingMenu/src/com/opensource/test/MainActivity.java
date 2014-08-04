@@ -103,6 +103,7 @@ public class MainActivity extends BaseSlidingActivity implements OnClickListener
 	
 	private void initAboveView() {
 		findViewById(R.id.ibtn_title_left).setOnClickListener(this);
+		findViewById(R.id.ibtn_title_right).setOnClickListener(this);
 		mTvTitle = (TextView) findViewById(R.id.tv_title);
 	}
 	
@@ -229,6 +230,9 @@ public class MainActivity extends BaseSlidingActivity implements OnClickListener
 		switch (v.getId()) {
 			case R.id.ibtn_title_left :
 				showMenu();
+				break;
+			case R.id.ibtn_title_right:
+				showSecondaryMenu();
 				break;
 			default :
 				break;
