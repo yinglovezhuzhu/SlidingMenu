@@ -82,13 +82,23 @@ public class MainActivity extends BaseSlidingActivity implements OnClickListener
 	// [start]初始化函数
 	private void initSlidingMenu() {
 		setBehindContentView(R.layout.layout_menu);
+//		mSlidingMenu = getSlidingMenu();
+//		mSlidingMenu.setShadowWidthRes(R.dimen.shadow_width);
+//		mSlidingMenu.setBehindOffsetRes(R.dimen.slidingmenu_offset);
+//		mSlidingMenu.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
+//		mSlidingMenu.setShadowDrawable(R.drawable.shape_shadow_slidingmenu);
+//		mSlidingMenu.setBehindScrollScale(0);
+//		mSlidingMenu.setMode(SlidingMenu.LEFT);
+
+		
 		mSlidingMenu = getSlidingMenu();
+		mSlidingMenu.setSecondaryMenu(R.layout.layout_menu);
 		mSlidingMenu.setShadowWidthRes(R.dimen.shadow_width);
 		mSlidingMenu.setBehindOffsetRes(R.dimen.slidingmenu_offset);
 		mSlidingMenu.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
 		mSlidingMenu.setShadowDrawable(R.drawable.shape_shadow_slidingmenu);
-		mSlidingMenu.setBehindScrollScale(0);
-		mSlidingMenu.setMode(SlidingMenu.LEFT);
+		mSlidingMenu.setBehindScrollScale(0.0f);
+		mSlidingMenu.setMode(SlidingMenu.LEFT_RIGHT);
 	}
 	
 	private void initAboveView() {
