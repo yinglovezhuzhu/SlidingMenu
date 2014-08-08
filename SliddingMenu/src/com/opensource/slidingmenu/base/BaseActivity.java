@@ -15,8 +15,6 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.Toast;
 
 import com.opensource.R;
-import com.opensource.slidingmenu.utils.FragmentManagerUtils;
-import com.opensource.slidingmenu.utils.FragmentUtil;
 import com.opensource.slidingmenu.utils.LogUtils;
 
 public class BaseActivity extends FragmentActivity {
@@ -27,15 +25,12 @@ public class BaseActivity extends FragmentActivity {
 
 	protected AlertDialog mAlertDialog;
 	
-//	protected FragmentManagerUtils mFragmentUtil = null;
-
 	/******************************** 【Activity LifeCycle For Debug】 *******************************************/
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		LogUtils.d(TAG, this.getClass().getSimpleName() + " onCreate() invoked!!");
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
-//		mFragmentUtil = FragmentManagerUtils.getInstance(getSupportFragmentManager());
 	}
 
 	@Override

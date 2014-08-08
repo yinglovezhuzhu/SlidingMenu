@@ -65,8 +65,6 @@ public class MainActivity extends BaseSlidingActivity implements OnClickListener
 		
 		mFragmentUtil = FragmentUtil.newInstance(this, R.id.fl_main_body);
 		
-//		mFragmentUtil.setContentBody();
-		
 		initAboveView();
 		
 		initBehindView();
@@ -174,13 +172,6 @@ public class MainActivity extends BaseSlidingActivity implements OnClickListener
 		mTvTitle.setText(title);
 		
 		mFragmentUtil.openFragment(cls, null);
-//		try {
-//			mFragmentUtil.changeToFragment(cls);
-//		} catch (InstantiationException e) {
-//			e.printStackTrace();
-//		} catch (IllegalAccessException e) {
-//			e.printStackTrace();
-//		}
 	}
 	
 	
