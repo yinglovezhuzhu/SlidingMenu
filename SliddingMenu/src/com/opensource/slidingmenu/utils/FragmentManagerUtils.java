@@ -14,6 +14,7 @@ package com.opensource.slidingmenu.utils;
 import java.util.HashSet;
 import java.util.Set;
 
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -109,4 +110,5 @@ public class FragmentManagerUtils {
 		}
 		ft.commit();
 	}
+	
 }

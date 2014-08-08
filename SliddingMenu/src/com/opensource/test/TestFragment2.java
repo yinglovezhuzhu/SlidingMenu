@@ -83,7 +83,14 @@ public class TestFragment2 extends Fragment {
 	public void onDestroyView() {
 		// TODO Auto-generated method stub
 		LogUtils.d(TAG, "onDestroyView()+++++>>");
+		Bundle b = new Bundle();
 		super.onDestroyView();
+	}
+	
+	@Override
+	public void onSaveInstanceState(Bundle outState) {
+		LogUtils.i(TAG, "onSaveInstanceState()++++++>>>>>>>>>>>");
+		super.onSaveInstanceState(outState);
 	}
 	
 	@Override

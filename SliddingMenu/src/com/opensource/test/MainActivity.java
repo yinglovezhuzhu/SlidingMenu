@@ -32,6 +32,7 @@ import com.opensource.R;
 import com.opensource.slidingmenu.SlidingMenu;
 import com.opensource.slidingmenu.adapter.MenuAdapter;
 import com.opensource.slidingmenu.base.BaseSlidingActivity;
+import com.opensource.slidingmenu.utils.FragmentUtil;
 import com.opensource.slidingmenu.utils.LogUtils;
 
 /**
@@ -40,6 +41,8 @@ import com.opensource.slidingmenu.utils.LogUtils;
  *
  */
 public class MainActivity extends BaseSlidingActivity implements OnClickListener {
+	
+	private FragmentUtil mFragmentUtil = null;
 	
 	private SlidingMenu mSlidingMenu = null;
 	
@@ -60,9 +63,9 @@ public class MainActivity extends BaseSlidingActivity implements OnClickListener
 		initSlidingMenu();
 		setContentView(R.layout.activity_main);
 		
-		mFragmentUtil.setContentBody(R.id.fl_main_body);
+		mFragmentUtil = FragmentUtil.newInstance(this, R.id.fl_main_body);
 		
-		
+//		mFragmentUtil.setContentBody();
 		
 		initAboveView();
 		
@@ -169,13 +172,15 @@ public class MainActivity extends BaseSlidingActivity implements OnClickListener
 	
 	private void gotoPage(String title, Class<? extends Fragment> cls) {
 		mTvTitle.setText(title);
-		try {
-			mFragmentUtil.changeToFragment(cls);
-		} catch (InstantiationException e) {
-			e.printStackTrace();
-		} catch (IllegalAccessException e) {
-			e.printStackTrace();
-		}
+		
+		mFragmentUtil.openFragment(cls, null);
+//		try {
+//			mFragmentUtil.changeToFragment(cls);
+//		} catch (InstantiationException e) {
+//			e.printStackTrace();
+//		} catch (IllegalAccessException e) {
+//			e.printStackTrace();
+//		}
 	}
 	
 	
